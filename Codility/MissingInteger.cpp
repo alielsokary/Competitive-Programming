@@ -19,3 +19,22 @@ int main() {
 	return num;
 	return 0;
 }
+
+// Swift 5
+// public func solution(_ A : inout [Int]) -> Int {
+//     var freqArr = [Int: Bool]()
+    
+//     for i in A {
+//         freqArr[i] = true
+//     }
+    
+//     var i = 1
+    
+//     while true {
+//         if freqArr[i] == nil {
+//             return i
+//         } else {
+//             i += 1
+//         }
+//     }
+// }
