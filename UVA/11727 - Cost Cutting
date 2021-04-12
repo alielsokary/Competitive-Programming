@@ -1,0 +1,18 @@
+#include <bits/stdc++.h>
+
+using namespace std;
+int n,x[1001],y[1001],z[1001];
+int mid;
+int main(int argc, char *argv[]) {
+	scanf("%d", &n);
+	
+	for (int i =0; i<n; i++) {
+		scanf("%d%d%d",&x[i],&y[i],&z[i]);		
+	}
+	
+	for (int i =0; i<n; i++) {
+		
+		mid = (x[i]+y[i]+z[i]) - min(min(x[i],y[i]),z[i]) - max(max(x[i],y[i]),z[i]);
+		printf("Case %d: %d\n",i+1, mid);
+	}
+}
